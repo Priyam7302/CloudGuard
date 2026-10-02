@@ -1,0 +1,85 @@
+.incident-table {
+  min-width: 640px;
+}
+
+.incident-id {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.cell-sub {
+  font-size: 11.5px;
+}
+
+.event-name {
+  font-weight: 550;
+  max-width: 200px;
+}
+
+.actor-cell {
+  max-width: 170px;
+}
+
+.score-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 96px;
+}
+
+.score-num {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.mitre-cell {
+  gap: 5px;
+}
+
+.col-chevron {
+  width: 34px;
+  padding-right: 10px !important;
+}
+
+.row-chevron {
+  color: var(--ink-3);
+  transition: transform var(--fast) var(--ease), color var(--fast) var(--ease);
+}
+
+.row-link:hover .row-chevron {
+  transform: translateX(3px);
+  color: var(--accent);
+}
+
+/* Incidents page toolbar ------------------------------------------------- */
+
+.incidents-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--border);
+}
+
+.incidents-search {
+  flex: 1;
+  min-width: 220px;
+  max-width: 380px;
+}
+
+.incidents-count {
+  font-size: 12px;
+  padding: 12px 20px;
+  border-top: 1px solid var(--hairline);
+}
+
+@media (max-width: 1080px) {
+  .hide-md {
+    display: none;
+  }
+
+  .incident-table {
+    min-width: 480px;
+  }
+}
